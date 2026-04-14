@@ -1,53 +1,87 @@
 <!DOCTYPE html>
-<html lang="he">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SURROUNDEDVR</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Surrounded VR - Professional Events</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background: #111;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            color: neon;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .gallery-item {
+            width: 300px;
+            margin: 10px;
+            border: 2px solid neon;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #111;
+        }
+    </style>
 </head>
-<body class="bg-gray-100">
-    <nav class="bg-white shadow">
-        <div class="max-w-7xl mx-auto px-4 py-5">
-            <div class="flex justify-between items-center">
-                <div class="text-xl font-bold text-gray-800">SURROUNDEDVR</div>
-                <div class="space-x-4">
-                    <a href="#" class="text-gray-600 hover:text-blue-500">דף הבית</a>
-                    <a href="#" class="text-gray-600 hover:text-blue-500">אודות</a>
-                    <a href="#" class="text-gray-600 hover:text-blue-500">צור קשר</a>
-                    <a href="#" class="text-gray-600 hover:text-blue-500">בלוג</a>
+<body>
+    <header>
+        <h1>Welcome to Surrounded VR Events</h1>
+    </header>
+    <section class="gallery">
+        <div class="gallery-item">
+            <img src="image1.jpg" alt="Event 1">
+            <p>Description of Event 1</p>
+        </div>
+        <div class="gallery-item">
+            <img src="image2.jpg" alt="Event 2">
+            <p>Description of Event 2</p>
+        </div>
+    </section>
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="accordion">
+            <div class="accordion-item">
+                <h3>Question 1?</h3>
+                <div class="accordion-content">
+                    <p>Answer to question 1.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h3>Question 2?</h3>
+                <div class="accordion-content">
+                    <p>Answer to question 2.</p>
                 </div>
             </div>
         </div>
-    </nav>
-    <header class="bg-blue-600 text-white">
-        <div class="max-w-7xl mx-auto py-20 text-center">
-            <h1 class="text-4xl font-bold">ברוכים הבאים ל-SURROUNDEDVR</h1>
-            <p class="mt-4 text-xl">Novus, אולפן ה-VR שלך</p>
-            <a href="#" class="mt-8 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-400">למידע נוסף</a>
-        </div>
-    </header>
-    <main class="max-w-7xl mx-auto py-12">
-        <section class="mb-8">
-            <h2 class="text-2xl font-bold mb-4">מידע על החברה</h2>
-            <p>חברת SURROUNDEDVR היא חברה המציעה פתרונות VR מתקדמים לעסקים פרטיים ועסקיים.</p>
-        </section>
-        <section>
-            <h2 class="text-2xl font-bold mb-4">צור קשר</h2>
-            <p>Email: <a href="mailto:surroundedvr@gmail.com" class="text-blue-500">surroundedvr@gmail.com</a></p>
-            <p>טלפון: <span class="text-blue-500">+972 54 304 0906</span></p>
-            <div class="flex space-x-4 mt-4">
-                <a href="#" class="text-blue-500"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-                <a href="#" class="text-blue-500"><i class="fab fa-facebook"></i> Facebook</a>
-                <a href="#" class="text-blue-500"><i class="fab fa-instagram"></i> Instagram</a>
-            </div>
-        </section>
-    </main>
-    <footer class="bg-gray-800 text-white py-4">
-        <div class="max-w-7xl mx-auto text-center">
-            &copy; 2026 SURROUNDEDVR - כל הזכויות שמורות
-        </div>
+    </section>
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2026 Surrounded VR. All rights reserved.</p>
     </footer>
 </body>
 </html>
